@@ -283,7 +283,7 @@
     </main>
 
     <div class="controls" id="controls">
-      <button id="unsureBtn">애매해요 · 다시 연습할래요</button>
+      <button id="unsureBtn">애매해요 · 다시 연습</button>
       <button id="confidentBtn">확실히 설명할 수 있어요</button>
       <button id="reviewBtn">다시 연습할 카드</button>
       <button id="reshuffleBtn">카드 섞기</button>
@@ -606,7 +606,7 @@ CPCR(Cardio-pulmonary Cerebral Resuscitation)에 대해 설명하시오.
       $unsureBtn.disabled = !(isReviewMode && hasRemainingReview);
       $unsureBtn.textContent = isReviewMode && hasRemainingReview
         ? "남은 카드 다시 연습"
-        : "애매해요 · 다시 연습할래요";
+        : "애매해요 · 다시 연습";
       $confidentBtn.disabled = true;
       $reviewBtn.disabled = false;
       $reviewBtn.textContent = isReviewMode
